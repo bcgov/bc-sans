@@ -33,8 +33,8 @@ body {
 }
 ```
 
-#About Conrtibuters
-blah
+## About Contributers
+
 
 # BC Government Design System
 The Design System helps developers and designers build better digital products and services.
