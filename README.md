@@ -37,7 +37,7 @@ Integrating it differently? [Create a pull request](https://github.com/bcgov/bc-
 ### About Contributers
 
 
-# BC Government Design System
+## About The BC Government Design System
 The Design System helps developers and designers build better digital products and services.
 
 It’s a collection of digital resources and tools – including a library of reusable UI/interface components and design patterns. The system makes it easier and faster to build custom B.C. government websites and applications.
