@@ -32,7 +32,7 @@ body {
      font-family: ‘BCSans’, Verdana, Arial, sans-serif;
 }
 ```
-Integrating it differently? [Create a pull Request](https://github.com/bcgov/bc-sans/pulls) to help us build out the documentation
+Integrating it differently? [Create a pull request](https://github.com/bcgov/bc-sans/pulls) to help us build out the documentation.
 
 ### About Contributers
 
