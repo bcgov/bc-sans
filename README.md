@@ -24,7 +24,7 @@ If you are wanting the fonts in different file formats, here are all the options
 
 ```css
 @font-face {
-  src: url('/yourPath/BCSans-Regular.woff') format('woff'); /* Modern Browsers */
+  src: url('@bcgov/bc-sans/fonts/BCSans-Regular.woff') format('woff'); /* Modern Browsers */
   font-family: 'BCSans';
 }
 
