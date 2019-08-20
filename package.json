@@ -8,7 +8,7 @@
   "files": [
     "fonts/*.woff"
   ],
-  "author": "",
-  "contributors": [""],
+  "author": ["Google","Government of B.C."],
+  "contributors": ["Chris Harvey"],
   "license": "SIL"
 }
