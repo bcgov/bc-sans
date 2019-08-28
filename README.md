@@ -20,18 +20,29 @@ If you are wanting the fonts in different file formats, here are all the options
 * [Download all font files](https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/policies-procedures-standards/web-content-development-guides/corporate-identity-assets/visid-files/bc-sans-font-all.zip) (.eot, .ttf, .otf, .woff, .woff2)
 
 
-### Font Integration
+### Integration
+#### React
 
-```css
-@font-face {
-  src: url('@bcgov/bc-sans/fonts/BCSans-Regular.woff') format('woff'); /* Modern Browsers */
-  font-family: 'BCSans';
-}
+Embed into a root level component
+`import '@bcgov/bc-sans/css/BCSans.css'`
 
-body {
-     font-family: ‘BCSans’, Verdana, Arial, sans-serif;
-}
+#### Typography.js
+>See Typography.js installation instructions [here](https://github.com/KyleAMathews/typography.js)
+```js
+import Typography from 'typography';
+import '@bcgov/bc-sans/css/BCSans.css';
+
+const typography = new Typography({
+  baseFontSize: '18px',
+  baseLineHeight: 1.25,
+  headerFontFamily: ['BCSans', 'Verdana', 'Arial', 'sans-serif'],
+  bodyFontFamily: ['BCSans', 'Verdana', 'Arial', 'sans-serif'],
+  scaleRatio: 2.074,
+});
+
+export default typography;
 ```
+
 Integrating it differently? [Create a pull request](https://github.com/bcgov/bc-sans/pulls) to help us build out the documentation.
 
 
