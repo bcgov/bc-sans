@@ -21,6 +21,8 @@ If you are wanting the fonts in different file formats, here are all the options
 
 
 ### Integration
+`npm i --save @bcgov/bc-sans`
+
 #### React
 
 Embed into a root level component
