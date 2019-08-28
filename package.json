@@ -6,9 +6,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "fonts/*.woff"
+    "fonts/*.woff",
+    "css/*.css"
   ],
-  "author": ["Google","Government of B.C."],
+  "authors": [
+    "Google",
+    "Government of B.C."
+  ],
   "contributors": ["Chris Harvey"],
   "license": "SIL"
 }
