@@ -14,5 +14,9 @@
     "Government of B.C."
   ],
   "contributors": ["Chris Harvey"],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:bcgov/bc-sans.git"
+  },
   "license": "SIL"
 }
