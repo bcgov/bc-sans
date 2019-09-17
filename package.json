@@ -1,6 +1,6 @@
 {
   "name": "@bcgov/bc-sans",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The standard font for B.C. Government digital services is BC Sans. BC Sans is an open source font family, and is a modified version of Noto Sans, developed by Google. BC Sans includes modifications to support Indigenous languages in British Columbia.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,9 @@
     "Google",
     "Government of B.C."
   ],
-  "contributors": ["Chris Harvey"],
+  "contributors": [
+    "Chris Harvey"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:bcgov/bc-sans.git"
