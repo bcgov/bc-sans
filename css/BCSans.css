@@ -5,19 +5,19 @@
     font-family: 'BCSans';
 }
 @font-face {
-    src: url('../fonts/BCSans-Regular.woff') format('woff');
+    src: url('../fonts/BCSans-BoldItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
     font-family: 'BCSans';
 }
 @font-face {
-    src: url('../fonts/BCSans-Regular.woff') format('woff');
+    src: url('../fonts/BCSans-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
     font-family: 'BCSans';
 }
 @font-face {
-    src: url('../fonts/BCSans-Regular.woff') format('woff');
+    src: url('../fonts/BCSans-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-family: 'BCSans';
