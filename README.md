@@ -45,6 +45,24 @@ const typography = new Typography({
 export default typography;
 ```
 
+#### Unpkg
+
+Load your font from unpkg like by inserting a link element in the head of your website:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@bcgov/bc-sans@1.0.2/css/BCSans.css"/>
+```
+
+Which will load regular, bold, italic, and bold-italic versions of the font. Alternatively you can load each one separately (or omit some) like so:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@bcgov/bc-sans@1.0.2/css/BCSans-regular.css"/>
+<link rel="stylesheet" href="https://unpkg.com/@bcgov/bc-sans@1.0.2/css/BCSans-bold.css"/>
+<link rel="stylesheet" href="https://unpkg.com/@bcgov/bc-sans@1.0.2/css/BCSans-italic.css"/>
+<link rel="stylesheet" href="https://unpkg.com/@bcgov/bc-sans@1.0.2/css/BCSans-bold-italic.css"/>
+```
+
+
 Integrating it differently? [Create a pull request](https://github.com/bcgov/bc-sans/pulls) to help us build out the documentation.
 
 
