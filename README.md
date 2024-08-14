@@ -1,6 +1,9 @@
 ## BC Sans
 
-The standard font for B.C. Government digital services is BC Sans. BC Sans is an open source font family, and is a modified version of Noto Sans, developed by Google. BC Sans includes modifications to support Indigenous languages in British Columbia.
+The standard font for B.C. Government digital services is BC Sans. BC Sans is an open source font family, and is a modified version of Noto Sans, developed by Google. BC Sans includes modifications to support Indigenous languages in British Columbia. B.C. Government is currently working to include Indigenous languages in government records,
+systems and services. Find out what steps are being taken and how you can stay informed at
+[Including Indigenous languages in government records, systems and services - Province of
+British Columbia](https://www2.gov.bc.ca/gov/content/data/initiatives/including-indigenous-languages#new).
 
 Font weights and styles included:
 
