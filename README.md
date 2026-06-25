@@ -49,6 +49,20 @@ const typography = new Typography({
 export default typography;
 ```
 
+#### CDN (unpkg / jsDelivr)
+
+For projects that don't use npm, you can load BC Sans directly from a CDN by adding a `<link>` element in the `<head>` of your page.
+
+**jsDelivr**
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@bcgov/bc-sans@latest/css/BC_Sans.css">
+```
+
+**unpkg:**
+```html
+<link rel="stylesheet" href="https://unpkg.com/@bcgov/bc-sans@latest/css/BC_Sans.css">
+```
+
 ### Why are there two similar CSS files in this package?
 
 For new projects, you only need to include one of the two CSS files: `css/BC_Sans.css`. Then, reference `BC Sans` in your CSS `font-family` rules.
