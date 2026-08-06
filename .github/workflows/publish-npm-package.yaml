@@ -1,0 +1,76 @@
+---
+name: Publish package to npm
+
+on:
+  pull_request:
+    branches: [main]
+    types: [closed]
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write # Required for npm OIDC
+
+jobs:
+  # This job publishes the `@bcgov/bc-sans` package to npm on the `latest` tag,
+  # which is the default tag that is used when running `npm install <package>`.
+  #
+  # This runs on publish, based on a tagged release.
+  publish-npm-latest:
+    if: ${{ github.event_name == 'release' && contains(github.event.release.tag_name, 'bcgov/bc-sans') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Publish package
+        run: npm publish --tag latest --provenance
+
+  # This job publishes the `@bcgov/bc-sans` package to npm on the `next` tag,
+  # which is the conventional tag for non-production/beta releases, installable
+  # using `npm install <package>@next`. The version number gets the pull request
+  # number appended to it so it's easy to tell at a glance which `next` version
+  # corresponds to which pull request.
+  #
+  # This runs on each pull request merge to `main` so latest versions can be
+  # tested live from the `next` tag.
+  publish-npm-next:
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.merged == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      # Append PR number to version number in package.json
+      - name: Update version in package.json
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          CURRENT_VERSION=$(jq -r '.version' package.json)
+          NEW_VERSION="${CURRENT_VERSION}-pr${PR_NUMBER}"
+          jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > tmp.json && mv tmp.json package.json
+        shell: bash
+
+      - name: Publish package
+        run: npm publish --tag next --provenance
