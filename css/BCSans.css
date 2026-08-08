@@ -1,4 +1,5 @@
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: normal;
   font-weight: 400;
@@ -7,6 +8,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: italic;
   font-weight: 400;
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: normal;
   font-weight: 700;
@@ -23,6 +26,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: italic;
   font-weight: 700;
@@ -31,6 +35,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: normal;
   font-weight: 300;
@@ -39,6 +44,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: italic;
   font-weight: 300;
