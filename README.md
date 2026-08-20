@@ -11,7 +11,11 @@ Font weights and styles included:
 - BC Sans Light - 300
 - BC Sans Light Italic - 300
 
-Typography standards for print are on the [B.C. Visual Identity Program](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/design-guidelines#palette-typography) page.
+### Typography
+
+For digital typography guidance, please see [B.C. Design System > Foundations > Typography](https://www2.gov.bc.ca/gov/content?id=72C2CD6E05494C84B9A072DD9C6A5342).
+
+For print typography guidance, please see [B.C. Visual Identity Program > Design Guidelines](https://www2.gov.bc.ca/gov/content?id=CCB4862101CD43C195FF395CAED00F95#palette-typography).
 
 ### Download Files
 
@@ -28,25 +32,6 @@ If you are wanting the fonts in different file formats, here are all the options
 
 Embed into a root level component
 `import '@bcgov/bc-sans/css/BC_Sans.css'`
-
-#### Typography.js
-
-> See Typography.js installation instructions [here](https://github.com/KyleAMathews/typography.js)
-
-```js
-import Typography from "typography";
-import "@bcgov/bc-sans/css/BC_Sans.css";
-
-const typography = new Typography({
-  baseFontSize: "16px",
-  baseLineHeight: 1.25,
-  headerFontFamily: ["BC Sans", "Noto Sans", "Verdana", "Arial", "sans-serif"],
-  bodyFontFamily: ["BC Sans", "Noto Sans", "Verdana", "Arial", "sans-serif"],
-  scaleRatio: 2.074,
-});
-
-export default typography;
-```
 
 ### Why are there two similar CSS files in this package?
 
