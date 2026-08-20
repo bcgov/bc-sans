@@ -8,7 +8,9 @@
   "files": [
     "fonts/*.woff",
     "fonts/*.woff2",
-    "css/*.css"
+    "css/*.css",
+    "LICENSE",
+    "LICENSE_OFL.txt"
   ],
   "authors": [
     "Google",
