@@ -50,7 +50,7 @@ You only need to include one of the two CSS files: `css/BC_Sans.css`.
 
 Projects that use the legacy `css/BCSans.css` file should **migrate to `css/BC_Sans.css`** and update their CSS rules to reference the correct `BC Sans` as font name.
 
-Versions of this package up to v2.0.0 shipped with only `css/BCSans.css`. This file uses the incorrect name `BCSans` (no space) as the `font-family` name in its `@font-face` declarations.
+Versions of this package before v2.1.0 shipped with only `css/BCSans.css`. This file uses the incorrect name `BCSans` (no space) as the `font-family` name in its `@font-face` declarations.
 
 The correct font name (matching the metadata in the font files) is `BC Sans` (with a space). `css/BC_Sans.css` uses `BC Sans` for its CSS `font-family` names. UI design tools like Figma output code using the `BC Sans` name from the font files.
 
