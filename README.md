@@ -28,18 +28,22 @@ If you are wanting the fonts in different file formats, here are all the options
 
 `npm i --save @bcgov/bc-sans`
 
-#### React
+In a root-level component: `import "@bcgov/bc-sans/css/BC_Sans.css";`
 
-Embed into a root level component
-`import '@bcgov/bc-sans/css/BC_Sans.css'`
+Reference `BC Sans` in your CSS `font-family` rules. Consider using the typography tokens from [@bcgov/design-tokens](https://www.npmjs.com/package/@bcgov/design-tokens).
 
 ### Why are there two similar CSS files in this package?
 
-For new projects, you only need to include one of the two CSS files: `css/BC_Sans.css`. Then, reference `BC Sans` in your CSS `font-family` rules.
+You only need to include one of the two CSS files: `css/BC_Sans.css`.
 
-Originally, this package shipped with just `css/BCSans.css`. This file uses `BCSans` (no space) as the `font-family` name in its `@font-face` declarations. Lots of existing application code references this name. But the metadata in the font files use `BC Sans` (with a space) for the font family name. As a result, UI design tools like Figma output code using `BC Sans` from the font files. This generated code would not work directly with this package without manual intervention.
+> [!WARNING]
+> ⚠️ **Beginning with version 3 of the BC Sans, [support for the incorrect `BCSans` font name will be dropped](https://github.com/bcgov/bc-sans/issues/28).** ⚠️
 
-`css/BC_Sans.css` uses `BC Sans` for its CSS `font-family` names. This matches the family metadata fields in the font files. Font style code generated from Figma works with `css/BC_Sans.css`. New projects should use `css/BC_Sans.css` for smoothest designer to developer hand-off. For existing projects, there is no need to switch.
+Projects that use the legacy `css/BCSans.css` file should **migrate to `css/BC_Sans.css`** and update their CSS rules to reference the correct `BC Sans` as font name.
+
+Versions of this package up to v2.0.0 shipped with only `css/BCSans.css`. This file uses the incorrect name `BCSans` (no space) as the `font-family` name in its `@font-face` declarations.
+
+The correct font name (matching the metadata in the font files) is `BC Sans` (with a space). `css/BC_Sans.css` uses `BC Sans` for its CSS `font-family` names. UI design tools like Figma output code using the `BC Sans` name from the font files.
 
 ### Contributing
 
