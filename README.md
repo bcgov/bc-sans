@@ -26,9 +26,19 @@ If you are wanting the fonts in different file formats, here are all the options
 
 ### Integration
 
+#### Install
+
 `npm i --save @bcgov/bc-sans`
 
+#### Import: React
+
 In a root-level component: `import "@bcgov/bc-sans/css/BC_Sans.css";`
+
+#### Import: Other frameworks
+
+Include `@bcgov/bc-sans/css/BC_Sans.css` in your application's global styles or stylesheet entry point.
+
+#### Use
 
 Reference `BC Sans` in your CSS `font-family` rules. Consider using the typography tokens from [@bcgov/design-tokens](https://www.npmjs.com/package/@bcgov/design-tokens).
 
