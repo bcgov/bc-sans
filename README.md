@@ -46,8 +46,7 @@ Reference `BC Sans` in your CSS `font-family` rules. Consider using the typograp
 
 You only need to include one of the two CSS files: `css/BC_Sans.css`.
 
-> [!WARNING]
-> ⚠️ **Beginning with version 3 of the BC Sans, [support for the incorrect `BCSans` font name will be dropped](https://github.com/bcgov/bc-sans/issues/28).** ⚠️
+⚠️ **Beginning with version 3 of the BC Sans, [support for the incorrect `BCSans` font name will be dropped](https://github.com/bcgov/bc-sans/issues/28).** ⚠️
 
 Projects that use the legacy `css/BCSans.css` file should **migrate to `css/BC_Sans.css`** and update their CSS rules to reference the correct `BC Sans` as font name.
 
