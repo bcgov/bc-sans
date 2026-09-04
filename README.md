@@ -42,6 +42,20 @@ Include `@bcgov/bc-sans/css/BC_Sans.css` in your application's global styles or 
 
 Reference `BC Sans` in your CSS `font-family` rules. Consider using the typography tokens from [@bcgov/design-tokens](https://www.npmjs.com/package/@bcgov/design-tokens).
 
+#### CDN (unpkg / jsDelivr)
+
+For projects that don't use npm, you can load BC Sans directly from a CDN by adding a `<link>` element in the `<head>` of your page.
+
+**jsDelivr**
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@bcgov/bc-sans@latest/css/BC_Sans.css">
+```
+
+**unpkg:**
+```html
+<link rel="stylesheet" href="https://unpkg.com/@bcgov/bc-sans@latest/css/BC_Sans.css">
+```
+
 ### Why are there two similar CSS files in this package?
 
 You only need to include one of the two CSS files: `css/BC_Sans.css`.
