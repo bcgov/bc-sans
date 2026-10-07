@@ -1,6 +1,7 @@
 /*! @deprecated Use css/BC_Sans.css instead. The `BCSans` font family name is incorrect; migrate to `BC Sans`. */
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: normal;
   font-weight: 400;
@@ -9,6 +10,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: italic;
   font-weight: 400;
@@ -17,6 +19,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: normal;
   font-weight: 700;
@@ -25,6 +28,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: italic;
   font-weight: 700;
@@ -33,6 +37,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: normal;
   font-weight: 300;
@@ -41,6 +46,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "BCSans";
   font-style: italic;
   font-weight: 300;
