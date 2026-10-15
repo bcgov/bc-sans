@@ -33,8 +33,10 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: packages/bc-sans
 
       - name: Publish package
         run: npm publish
+        working-directory: packages/bc-sans
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
