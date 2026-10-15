@@ -6,6 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
+    "README.md",
     "fonts/*.woff",
     "fonts/*.woff2",
     "css/*.css",
